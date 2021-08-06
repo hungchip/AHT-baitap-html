@@ -1,0 +1,87 @@
+#footer {
+    background-color: @color-text-dark;
+    .top-footer,
+    .bottom-footer {
+        display: flex;
+        justify-content: space-between;
+        ul {
+            display: flex;
+        }
+    }
+    
+    .top-footer {
+        text-transform: uppercase;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 70px 0;
+        border-bottom: 1px solid #000;
+        .direct {
+            align-items: center;
+            .direct-item {
+                padding: 15px;
+                font-family: @font-fira;
+                
+                a {
+                    color: @color-text-gray;
+                    font-weight: bold;
+                    transition: all ease-in-out .3s;
+                    &:hover{
+                        color: @color-hover;
+                        
+                    }
+                }
+            }
+        }
+        .btn-subcribe {
+            font-size: 14px;
+            font-weight: bold;
+            a {
+                color: @color-text-gray;
+                font-family: @font-fira;
+                &>span {
+                    border: 2px solid #696969;
+                    padding: 10px 20px;
+                   
+                }
+                .sub-icon {
+                    color: @color-hover;
+                    margin-left: 10px;
+                }
+            }
+           
+        }
+    }
+    .bottom-footer {
+        font-family: @font-fira;
+        font-size: 14px;
+        color: #626262;
+        padding: 30px 0 90px 0;
+        .bottom-footer-right{
+            font-size: 25px;
+            .social-item {
+                border: 1px solid #696969;
+                border-radius: 100%;
+                padding: 10px 15px; margin-left: 10px;
+                transition: all ease-in-out .3s;
+                a {
+                    color: @color-text-gray;
+                    transition: all ease-in-out .3s;
+                }
+                &:hover{
+                    background: @color-hover;  
+                    border-color: @color-hover;  
+                    a {
+                        color: @color-text-dark;
+                    }
+                }
+                &.tw,
+                &.yt {
+                    padding: 10px 12px;
+                }
+            }
+        }
+        .bottom-footer-left {
+            line-height: 2rem;
+        }
+    }
+}

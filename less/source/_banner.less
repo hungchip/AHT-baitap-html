@@ -1,0 +1,121 @@
+#banner {
+    .banner-top,
+    .banner-bottom {
+        max-width: 1720px;
+        padding: 0 15px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        // max-height: 522px;
+        // overflow: hidden;
+        .col-inner{
+            position: relative;
+            .col-inner-text {
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                margin-bottom: 35px;
+                text-transform: capitalize;
+                text-align: center;
+                font-size: 24px;
+                .product-name {
+                    font-family: @font-fira;
+                    margin-bottom: 30px;
+                    letter-spacing: 2px;
+                }
+                .product-price {
+                    font-family: @font-corm;
+                    color: @color-hover;
+                }
+                .category{
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    text-align: left;
+                    padding-left: 40px;
+                }
+                .type{
+                    font-size: 72px;
+                    text-align: left;
+                    padding-left: 40px;
+                }
+            }
+            .saleup-box{
+                position: absolute;
+                border: solid 5px #fff;
+                top: 50%;
+                left: 50%;
+                transform: translate(35%, -50%);
+                padding: 40px 30px;
+                text-align: center;
+                color: @color-text-dark;
+                .saleup-title{
+                    font-size: 18px;
+                    margin-bottom: 40px;
+                    letter-spacing: 2px;
+                    font-family: @font-fira;
+                }
+                .saleup-percent{
+                    font-size: 100px;
+                    
+                }
+                .saleup-content {
+                    color: @color-69;
+                    font-size: 24px;
+                    margin-bottom: 40px;
+                    text-transform: capitalize;
+                }
+                .saleup-shop-now{
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    font-family: @font-fira;
+                    color: @color-69;
+                    font-weight: bold;;
+                }
+                &::after{
+                    top: 0;
+                    left: -1px;
+                    display: block;
+                    content: '';
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    border-left: 137px solid #fff;
+                    border-bottom: 170px solid #fff;
+                    border-right: 137px solid transparent;
+                    border-top: 170px solid transparent;
+                    z-index: -1;
+                }
+            }
+        }
+        
+    }
+    .banner-bottom {
+        .col-6 {
+            .col-inner {
+                .col-inner-text {
+                    text-align: left;
+                    padding-left: 60px;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                    margin: 0;
+                    width: 40%;
+                    font-size: 14px;
+                    .special-name {
+                        font-size: 48px;
+                        margin-bottom: 40px;
+                    }
+                    .special-info {
+                        color: @color-69;
+                        font-family: @font-fira;
+                        text-transform: none;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        
+    }
+}
