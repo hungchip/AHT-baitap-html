@@ -7,7 +7,7 @@ $(document).ready(function() {
 
         } else {
             $('#header').css('background', 'none');
-            $('#header').css('padding', '25px 15px');
+            $('#header').css('padding', '30px 15px');
         }
     });
 });

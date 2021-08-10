@@ -1,0 +1,8 @@
+ioicon. -> cart
+banner top- background image
+leaf ring - fontweight bold
+flex directionn column
+footer row wrap
+
+
+menu bottom - flex -flex wrap

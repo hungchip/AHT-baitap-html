@@ -24,10 +24,16 @@
         .banner-top {
             .col-inner {
                 .saleup-box {
-                    transform: translate(10%, -50%);
+                    width: 40.5%;
                 }
             }
-            
+            .banner-right {
+                .col-inner-text {
+                    .type {
+                        font-size: 50px;
+                    }
+                }
+            }
         }
         .row{
             flex-wrap: nowrap;
@@ -81,7 +87,8 @@
                 }
                 .saleup-box {
                     transform: translate(10%, -50%);
-                    padding: 30px 5px;
+                    padding: 50px 0px;
+                    width: 45%;
                     .saleup-title {
                         font-size: 18px;
                         margin-bottom: 10px;
@@ -92,12 +99,6 @@
                     .saleup-content {
                         font-size: 20px;
                         margin-bottom: 15px;
-                    }
-                    &::after{
-                        border-left: 95px solid #fff;
-                        border-bottom: 110px solid #fff;
-                        border-right: 95px solid transparent;
-                        border-top: 111px solid transparent;
                     }
                 }
             }
@@ -175,30 +176,54 @@
         .banner-bottom {
             .col-inner {
                 .col-inner-text {
-                    margin-bottom: 10px;
+                    margin-bottom: 40px;
                     font-size: 18px;
                     .product-name {
                         margin-bottom: 10px;
+                        padding-left: 35px;
                     }
                     .type {
-                        font-size: 30px;
+                        font-size: 60px;
+                        padding-left: 35px;
                     }
                 }
                 .saleup-box {
                     transform: translate(-5%, -50%);
-                    padding: 0;
-                    
-                    &::after{
-                        border-left: 84px solid #fff;
-                        border-bottom: 93px solid #fff;
-                        border-right: 84px solid transparent;
-                        border-top: 93px solid transparent;
-                    }
+                    width: 29%;
+
                 }
             }
-        } 
-        .banner-bottom {
+        }
+        .banner-top {
+
+            .row {
+                flex-wrap: wrap;
+            }
+            .banner-left,
+            .banner-right {
+                margin: 0;
+            }
+            .col-3:nth-child(1){
+                order: 2;
+                width: 50%;
+            }
+            .col-3:nth-child(3){
+                order: 3;
+                width: 50%;
+            }
             .col-6 {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+        .banner-bottom {
+            .row {
+                flex-wrap: wrap;
+            }
+            .col-6 {
+                order: 1;
+                width: 100%;
+                margin-bottom: 30px;
                 .col-inner {
                     .col-inner-text {
                         padding-left: 25px;
@@ -210,7 +235,14 @@
                         }
                     }
                 }
-            } 
+            } .col-3:nth-child(1){
+                order: 2;
+                width: 50%;
+            }
+            .col-3:nth-child(2){
+                order: 3;
+                width: 50%;
+            }
         } 
     }    
     #feature-item {
@@ -272,34 +304,26 @@
         .top-footer {
             align-items: center;
             ul.direct {
-                display: block;
-                .direct-item {
-                    padding: 5px;
-                }
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .sub-icon {
+                display: none;
             }
         }
     }
 }
 
 @media screen and (max-width: 425px) {
-    #slider {
-        .slider-content-inner {
-            .slider-content-left{
-                .content-left-top {
-                    font-size: 15px;
-                }
-                .content-left-bot{
-                    font-size: 20px
-                }
-                .discover {
-                    font-size: 10px;
-                    padding: 10px 20px;
+    
+    #banner_top {
+        .container-wide {
+            .title-banner {
+                .title-banner-bot {
+                    font-size: 65px;
                 }
             }
             
-            .slider-content-right{
-                font-size: 15px;
-            }
         }
     }
     
@@ -330,6 +354,11 @@
     #banner {
         .banner-top,
         .banner-bottom {
+            .banner-middle,
+            .banner-right,
+            .banner-left{
+                margin: 0;
+            }
             .col-inner {
                 .col-inner-text {
                     margin-bottom: 35px;
@@ -346,14 +375,9 @@
 
                 }
                 .saleup-box {
-                    transform: translate(-4%, -50%);
-                    padding: 17px 5px;
-                    &::after{
-                        border-left: 95px solid #fff;
-                        border-bottom: 110px solid #fff;
-                        border-right: 95px solid transparent;
-                        border-top: 110px solid transparent;
-                    }
+                    width: 44%;
+                    padding: 10px 0;
+                    transform: translate(15%, -50%);
                 }
             }
             .row{
@@ -392,6 +416,9 @@
         margin-bottom: -25px;
     }
     #blog {
+        .col-4 {
+            margin-bottom: 30px;
+        }
         .blog-content {
             padding: 20px;
             .blog-date {
@@ -426,6 +453,35 @@
             flex-wrap: wrap;
             .btn-subcribe{
                 margin-top: 33px;
+            }
+            &>*{
+                margin-bottom: 15px;
+            }
+        }
+        .bottom-footer {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width: 375px){
+    #banner_top {
+        .container-wide {
+            .title-banner {
+                .title-banner-bot {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+    #banner {
+        .banner-top {
+            .col-inner {
+                .saleup-box {
+                    width: 49%;
+                    transform: translate(20%, -50%);
+                }
             }
         }
     }

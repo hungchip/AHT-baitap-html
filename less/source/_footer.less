@@ -13,18 +13,19 @@
         text-transform: uppercase;
         justify-content: space-between;
         align-items: flex-end;
-        padding: 70px 0;
+        padding: 65px 0 69px 0;
         border-bottom: 1px solid #000;
         .direct {
             align-items: center;
             .direct-item {
-                padding: 15px;
+                padding: 12px 17px;
                 font-family: @font-fira;
                 
                 a {
                     color: @color-text-gray;
                     font-weight: bold;
                     transition: all ease-in-out .3s;
+                    font-size: 13px;
                     &:hover{
                         color: @color-hover;
                         
@@ -35,13 +36,14 @@
         .btn-subcribe {
             font-size: 14px;
             font-weight: bold;
+            margin-bottom: 12px;
             a {
                 color: @color-text-gray;
                 font-family: @font-fira;
                 &>span {
                     border: 2px solid #696969;
                     padding: 10px 20px;
-                   
+                    letter-spacing: .14rem;
                 }
                 .sub-icon {
                     color: @color-hover;
@@ -55,14 +57,16 @@
         font-family: @font-fira;
         font-size: 14px;
         color: #626262;
-        padding: 30px 0 90px 0;
+        padding: 30px 0 60px 0;
         .bottom-footer-right{
             font-size: 25px;
             .social-item {
-                border: 1px solid #696969;
+                border: 2px solid #696969;
                 border-radius: 100%;
-                padding: 10px 15px; margin-left: 10px;
+                padding: 13px 16px;
+                margin-left: 10px;
                 transition: all ease-in-out .3s;
+                font-size: 16px;
                 a {
                     color: @color-text-gray;
                     transition: all ease-in-out .3s;
@@ -74,14 +78,24 @@
                         color: @color-text-dark;
                     }
                 }
+                &.fb {
+                    padding: 13px 16px;
+                }
+                
+                &.tw, 
+                &.yt {
+                    padding: 10px 13px;
+                }
                 &.tw,
                 &.yt {
-                    padding: 10px 12px;
+                    padding-top: 13px;
                 }
             }
         }
         .bottom-footer-left {
-            line-height: 2rem;
+            &>* {
+                margin-bottom: 15px;
+            }
         }
     }
 }

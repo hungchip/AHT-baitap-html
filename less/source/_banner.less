@@ -1,32 +1,37 @@
 #banner {
+
     .banner-top,
     .banner-bottom {
-        max-width: 1720px;
+        max-width: 1750px;
         padding: 0 15px;
         margin: 0 auto;
-        margin-bottom: 50px;
-        // max-height: 522px;
-        // overflow: hidden;
+        margin-bottom: 42px;
         .col-inner{
             position: relative;
+            overflow: hidden;
+            img {
+                transition: all ease-in-out .4s;
+            }
             .col-inner-text {
                 width: 100%;
                 position: absolute;
                 bottom: 0;
                 left: 50%;
                 transform: translateX(-50%);
-                margin-bottom: 35px;
+                margin-bottom: 37px;
                 text-transform: capitalize;
                 text-align: center;
                 font-size: 24px;
                 .product-name {
                     font-family: @font-fira;
-                    margin-bottom: 30px;
-                    letter-spacing: 2px;
+                    margin-bottom: 25px;
+                    letter-spacing: 1px;
                 }
                 .product-price {
                     font-family: @font-corm;
                     color: @color-hover;
+                    font-size: 20px;
+                    letter-spacing: 1px;
                 }
                 .category{
                     text-transform: uppercase;
@@ -40,82 +45,107 @@
                     padding-left: 40px;
                 }
             }
-            .saleup-box{
-                position: absolute;
-                border: solid 5px #fff;
-                top: 50%;
-                left: 50%;
-                transform: translate(35%, -50%);
-                padding: 40px 30px;
-                text-align: center;
-                color: @color-text-dark;
-                .saleup-title{
-                    font-size: 18px;
-                    margin-bottom: 40px;
-                    letter-spacing: 2px;
-                    font-family: @font-fira;
+            &:hover img{
+                transform: scale(1.2);
+            }
+        } 
+    }
+    .banner-top {
+        .banner-left{
+            margin-right: 15px;
+        }
+        .banner-right{
+            margin-left: 15px;
+            .col-inner-text {
+                margin-bottom: 70px;
+                .category {
+                    letter-spacing: .1rem;
+                    margin-bottom: 22px;
+                    padding-left: 50px;
                 }
-                .saleup-percent{
+                .type {
+                    padding-left: 44px;
+                }
+            }
+        }
+        .banner-middle {
+            margin: 0 5px;
+            .saleup-box {
+                background-image: url('../images/bg-retangle.png');
+                width: 33.3333%;
+                position: absolute;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                max-height: 340px;
+                top: 49%;
+                right: 45px;
+                transform: translateY(-50%);
+                font-family: @font-fira;
+                text-align: center;
+                padding: 45px 10px;
+                .saleup-title {
+                    margin-bottom: 25px;
+                    font-size: 18px;
+                    letter-spacing: 4px;
+                    color: @color-text-dark;
+                }
+                .saleup-percent {
                     font-size: 100px;
-                    
+                    font-family: @font-corm;
                 }
                 .saleup-content {
-                    color: @color-69;
+                    margin-bottom: 64px;
                     font-size: 24px;
-                    margin-bottom: 40px;
+                    font-family: @font-corm;
                     text-transform: capitalize;
-                }
-                .saleup-shop-now{
-                    font-size: 14px;
-                    text-transform: uppercase;
-                    letter-spacing: 2px;
-                    font-family: @font-fira;
                     color: @color-69;
-                    font-weight: bold;;
                 }
-                &::after{
-                    top: 0;
-                    left: -1px;
-                    display: block;
-                    content: '';
-                    position: absolute;
-                    width: 0;
-                    height: 0;
-                    border-left: 137px solid #fff;
-                    border-bottom: 170px solid #fff;
-                    border-right: 137px solid transparent;
-                    border-top: 170px solid transparent;
-                    z-index: -1;
+                .saleup-shop-now {
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    color: @color-69;
                 }
             }
         }
-        
     }
     .banner-bottom {
-        .col-6 {
-            .col-inner {
-                .col-inner-text {
-                    text-align: left;
-                    padding-left: 60px;
-                    top: 50%;
-                    left: 0;
-                    transform: translateY(-50%);
-                    margin: 0;
-                    width: 40%;
-                    font-size: 14px;
-                    .special-name {
-                        font-size: 48px;
-                        margin-bottom: 40px;
-                    }
-                    .special-info {
-                        color: @color-69;
-                        font-family: @font-fira;
-                        text-transform: none;
-                        font-weight: bold;
-                    }
+        .banner-left {
+            margin-right: 15px;
+        }
+
+        .banner-middle {
+            margin: 0 10px;
+            .product-name {
+                
+            }
+        }
+        .banner-right {
+            margin-left: 10px;
+            .col-inner-text {
+                text-align: left;
+                padding-left: 53px;
+                top: 51%;
+                left: 0;
+                transform: translateY(-50%);
+                margin: 0;
+                width: 40%;
+                font-size: 14px;
+                .special-name {
+                    font-size: 48px;
+                    margin-bottom: 25px;
+                    letter-spacing: -1px;
+                }
+                .special-info {
+                    color: @color-69;
+                    font-family: @font-fira;
+                    text-transform: none;
+                    font-weight: bold;
+                    margin-bottom: 7px;
+                    letter-spacing: .02rem;
                 }
             }
         }
-        
     }
 }
