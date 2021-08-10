@@ -259,13 +259,10 @@ li {
   opacity: 0.5;
   transition: all ease-in-out 0.3s;
 }
-#banner_top .container-wide .social .list-social .social-item a:hover {
-  opacity: 1;
-}
-#banner_top .container-wide .social .list-social .social-item::after {
+#banner_top .container-wide .social .list-social .social-item a::after {
   position: absolute;
   content: '';
-  opacity: 1;
+  opacity: 0;
   transition: all ease-in-out 0.3s;
   background: #000;
   height: 1px;
@@ -274,7 +271,8 @@ li {
   left: 115%;
   transform: translateY(-50%);
 }
-#banner_top .container-wide .social .list-social .social-item:hover .social-item::after {
+#banner_top .container-wide .social .list-social .social-item a:hover a::after,
+#banner_top .container-wide .social .list-social .social-item a:hover {
   opacity: 1;
 }
 #intro-service {

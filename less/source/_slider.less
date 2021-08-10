@@ -51,30 +51,29 @@
                 .social-item {
                     margin-bottom: 12px;
                     position: relative;
-                    
                     a {
                         color: #fff;
                         opacity: .5;
                         transition: all ease-in-out .3s;
+                        &::after{
+                            position: absolute;
+                            content: '';
+                            opacity: 0;
+                            transition: all ease-in-out .3s;
+                            background: #000;
+                            height: 1px;
+                            width: 80px;
+                            top: 50%;
+                            left: 115%;
+                            transform: translateY(-50%);
+                        }
+                        &:hover a::after,
                         &:hover {
-                           opacity: 1;
+                            opacity: 1;
                         }
                     }
-                    &::after{
-                        position: absolute;
-                        content : '';
-                        opacity: 1;
-                        transition: all ease-in-out .3s;
-                        background: #000;
-                        height: 1px;
-                        width: 80px;
-                        top: 50%;
-                        left: 115%;
-                        transform: translateY(-50%);
-                    }
-                    &:hover .social-item::after {
-                        opacity: 1;
-                    }
+                    
+                    
                 }
             }
         }
