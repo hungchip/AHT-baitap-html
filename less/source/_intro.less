@@ -1,8 +1,7 @@
-#intro-service {
+.intro-service {
     text-align: center;
     font-size: 18px;
     .service {
-        padding: 21px 0px 13px 0px;
         display: flex;
         align-items: center;
         border-bottom: 1px solid #efefef;
@@ -14,24 +13,35 @@
         text-transform: uppercase;
         color: @color-text-dark;
         letter-spacing: 2px;
-        margin-bottom: 9px;
+        line-height: 28px;
+        font-weight: bold;
     }
     .title-info{
         color: @color-text-gray;
         font-size: 14px;
         font-family: @font-fira;
+        line-height: 28px;
     }
     .intro {
-        padding: 112px 0 119px 0;
-        line-height: 50px;
-        letter-spacing: .13rem;
+        padding: 110px 0 120px 0;
+        line-height: 48px;
         .row {
             justify-content: center;
         }
         .intro-text{
-            font-size: 28px;
+            font-size: 34px;
+            font-weight: bold;
         }
         
     }
     
+}
+.service {
+    .col-4 {
+        border-left: 1px solid #efefef;
+        padding-top: 18px;
+    }
+    .col-4:last-child {
+        border-right: 1px solid #efefef;
+    }
 }

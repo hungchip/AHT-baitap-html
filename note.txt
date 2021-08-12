@@ -6,3 +6,4 @@ footer row wrap
 
 
 menu bottom - flex -flex wrap
+fix lần 2 

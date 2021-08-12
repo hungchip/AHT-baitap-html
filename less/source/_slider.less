@@ -1,4 +1,4 @@
-#banner_top {
+.banner_top {
     background-image: url('../images/banner_01.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -12,70 +12,78 @@
         width: 100%;
         // background: #ccc;
         margin: 0 auto;
-        position: relative;
-        .title-banner {
-            font-family: @font-fira;
-            width: 66%;
-            .title-banner-top {
-                font-size: 24px;
-                color: @color-69;
-                letter-spacing: 10px;
-                margin-bottom: 50px;
-            }
-            .title-banner-bot {
-                font-size: 100px;
-                color: @color-text-dark;
-                font-family: @font-corm;
-                text-transform: uppercase;
-                letter-spacing: 23px;
-                font-style: italic;
-                margin-bottom: 70px;
-            }
-            .discover {
-                padding: 15px 30px;
-                background-color: @color-text-dark;
-                color: #fff;
-                font-weight: bold;
-                text-transform: uppercase;
-            }
-        }
-        .social {
-            position: absolute;
-            top: 52%;
-            right: 14px;
-            transform: translateY(-50%);
-            font-size: 24px;
-            .list-social {
-                text-align: right;
-                letter-spacing: 2px;
-                .social-item {
-                    margin-bottom: 12px;
-                    position: relative;
-                    a {
-                        color: #fff;
-                        opacity: .5;
-                        transition: all ease-in-out .3s;
-                        &::after{
-                            position: absolute;
-                            content: '';
-                            opacity: 0;
-                            transition: all ease-in-out .3s;
-                            background: #000;
-                            height: 1px;
-                            width: 80px;
-                            top: 50%;
-                            left: 115%;
-                            transform: translateY(-50%);
-                        }
-                        &:hover a::after,
-                        &:hover {
-                            opacity: 1;
-                        }
-                    }
-                    
-                    
-                }
-            }
-        }
+        position: relative;  
    }
+}
+
+.title-banner {
+    font-family: @font-fira;
+    width: 75%;
+    .title-banner-top {
+        font-size: 24px;
+        color: @color-69;
+        letter-spacing: 12px;
+        line-height: 32px;
+        margin-top: 40px;
+    }
+    .title-banner-bot {
+        font-size: 100px;
+        color: @color-text-dark;
+        font-family: @font-corm;
+        text-transform: uppercase;
+        letter-spacing: 30px;
+        font-style: italic;
+        line-height: 100px;
+        margin-top: 32px;
+        margin-bottom: 70px;
+    }
+    .discover {
+        padding: 15px 30px;
+        background-color: @color-text-dark;
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        line-height: 24px;
+    }
+}
+.social {
+    position: absolute;
+    top: 51%;
+    right: 18px;
+    transform: translateY(-50%);
+    font-size: 24px;
+    .list-social {
+        text-align: right;
+        letter-spacing: 2px;
+        line-height: 40px;
+        
+    }
+}
+
+.banner_top {
+    .social-item {
+        position: relative;
+        a {
+            color: #fff;
+            opacity: .5;
+            transition: all ease-in-out .3s;
+            &:after{
+                position: absolute;
+                content: '';
+                opacity: 0;
+                transition: all ease-in-out .3s;
+                background: #000;
+                height: 1px;
+                width: 80px;
+                top: 50%;
+                left: 115%;
+                transform: translateY(-50%);
+            }
+            &:hover:after,
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
 }

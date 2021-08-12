@@ -1,5 +1,6 @@
-#footer {
+.footer {
     background-color: @color-text-dark;
+    margin-top: -5px;
     .top-footer,
     .bottom-footer {
         display: flex;
@@ -8,93 +9,101 @@
             display: flex;
         }
     }
-    
-    .top-footer {
-        text-transform: uppercase;
-        justify-content: space-between;
-        align-items: flex-end;
-        padding: 65px 0 69px 0;
-        border-bottom: 1px solid #000;
-        .direct {
-            align-items: center;
-            .direct-item {
-                padding: 12px 17px;
-                font-family: @font-fira;
-                
-                a {
-                    color: @color-text-gray;
-                    font-weight: bold;
-                    transition: all ease-in-out .3s;
-                    font-size: 13px;
-                    &:hover{
-                        color: @color-hover;
-                        
-                    }
-                }
-            }
-        }
-        .btn-subcribe {
-            font-size: 14px;
+}
+
+.top-footer {
+    text-transform: uppercase;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 65px 0 69px 0;
+    border-bottom: 1px solid #000;
+}
+
+.direct {
+    align-items: center;
+    .direct-item {
+        padding: 8px 17px;
+        font-family: @font-fira;    
+        line-height: 24px;
+        letter-spacing: 1px;
+        a {
+            color: @color-text-gray;
             font-weight: bold;
-            margin-bottom: 12px;
-            a {
-                color: @color-text-gray;
-                font-family: @font-fira;
-                &>span {
-                    border: 2px solid #696969;
-                    padding: 10px 20px;
-                    letter-spacing: .14rem;
-                }
-                .sub-icon {
-                    color: @color-hover;
-                    margin-left: 10px;
-                }
+            transition: all ease-in-out .3s;
+            font-size: 13px;
+            &:hover{
+                color: @color-hover;
+                
             }
-           
         }
     }
-    .bottom-footer {
+}
+.btn-subcribe {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 9px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    a {
+        color: @color-text-gray;
         font-family: @font-fira;
-        font-size: 14px;
-        color: #626262;
-        padding: 30px 0 60px 0;
-        .bottom-footer-right{
-            font-size: 25px;
-            .social-item {
-                border: 2px solid #696969;
-                border-radius: 100%;
-                padding: 13px 16px;
-                margin-left: 10px;
-                transition: all ease-in-out .3s;
-                font-size: 16px;
-                a {
-                    color: @color-text-gray;
-                    transition: all ease-in-out .3s;
-                }
-                &:hover{
-                    background: @color-hover;  
-                    border-color: @color-hover;  
-                    a {
-                        color: @color-text-dark;
-                    }
-                }
-                &.fb {
-                    padding: 13px 16px;
-                }
-                
-                &.tw, 
-                &.yt {
-                    padding: 10px 13px;
-                }
-                &.tw,
-                &.yt {
-                    padding-top: 13px;
-                }
-            }
+        &>span {
+            border: 2px solid #696969;
+            padding: 10px 20px;
+            letter-spacing: 2px;
         }
-        .bottom-footer-left {
-            &>* {
-                margin-bottom: 15px;
+        .sub-icon {
+            color: @color-hover;
+            margin-left: 10px;
+        }
+    }
+   
+}
+.bottom-footer {
+    font-family: @font-fira;
+    align-items: center;
+    font-size: 14px;
+    color: #626262;
+    padding: 24px 0 77px 0;
+    .bottom-footer-right{
+        font-size: 25px;
+    }
+    .bottom-footer-left {
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
+
+.footer {
+    a   {
+        color: @color-text-gray;
+        transition: all ease-in-out .3s;
+        .social-item {
+            border: 2px solid #696969;
+            border-radius: 100%;
+            padding: 13px 16px;
+            margin-left: 10px;
+            transition: all ease-in-out .3s;
+            font-size: 16px;
+            &:hover {
+                background: @color-hover;  
+                border-color: @color-hover;  
+                color: @color-text-dark;
+            }
+            &:hover a{
+                color: @color-text-dark;
+            }
+            &.fb {
+                padding: 13px 16px;
+            }
+
+            &.tw, 
+            &.yt {
+                padding: 10px 13px;
+            }
+            &.tw,
+            &.yt {
+                padding-top: 13px;
             }
         }
     }
