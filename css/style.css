@@ -732,13 +732,14 @@ li {
   justify-content: space-between;
   align-items: flex-end;
   padding: 65px 0 69px 0;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #2b2b2b;
 }
 .direct {
   align-items: center;
 }
 .direct .direct-item {
-  padding: 8px 17px;
+  transform: translateY(-7px);
+  margin-right: 35px;
   font-family: 'FiraSans', sans-serif;
   line-height: 24px;
   letter-spacing: 1px;
@@ -747,7 +748,7 @@ li {
   color: #ababab;
   font-weight: bold;
   transition: all ease-in-out 0.3s;
-  font-size: 13px;
+  font-size: 14px;
 }
 .direct .direct-item a:hover {
   color: #d6ba8d;
@@ -777,7 +778,7 @@ li {
   align-items: center;
   font-size: 14px;
   color: #626262;
-  padding: 24px 0 77px 0;
+  padding: 24px 0 85px 0;
 }
 .bottom-footer .bottom-footer-right {
   font-size: 25px;
@@ -785,6 +786,8 @@ li {
 .bottom-footer .bottom-footer-left {
   font-size: 14px;
   line-height: 28px;
+  transform: translate(-5px, 15px);
+  font-weight: bold;
 }
 .footer a {
   color: #ababab;
@@ -861,6 +864,7 @@ li {
   .saleup-box .saleup-percent {
     font-size: 75px;
     line-height: 80px;
+    font-weight: bold;
   }
   .saleup-box .saleup-content {
     line-height: 56px;

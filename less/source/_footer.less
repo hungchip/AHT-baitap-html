@@ -16,13 +16,14 @@
     justify-content: space-between;
     align-items: flex-end;
     padding: 65px 0 69px 0;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #2b2b2b;
 }
 
 .direct {
     align-items: center;
     .direct-item {
-        padding: 8px 17px;
+        transform: translateY(-7px);
+        margin-right: 35px;
         font-family: @font-fira;    
         line-height: 24px;
         letter-spacing: 1px;
@@ -30,7 +31,7 @@
             color: @color-text-gray;
             font-weight: bold;
             transition: all ease-in-out .3s;
-            font-size: 13px;
+            font-size: 14px;
             &:hover{
                 color: @color-hover;
                 
@@ -64,13 +65,15 @@
     align-items: center;
     font-size: 14px;
     color: #626262;
-    padding: 24px 0 77px 0;
+    padding: 24px 0 85px 0;
     .bottom-footer-right{
         font-size: 25px;
     }
     .bottom-footer-left {
         font-size: 14px;
         line-height: 28px;
+        transform: translate(-5px, 15px);
+        font-weight: bold;
     }
 }
 
