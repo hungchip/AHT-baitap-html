@@ -438,11 +438,8 @@
         .top-footer {
             justify-content: space-around;
             flex-wrap: wrap;
-            .btn-subcribe{
-                margin-top: 33px;
-            }
             &>*{
-                margin-bottom: 15px;
+                margin-bottom: 25px;
             }
         }
         .bottom-footer {
@@ -455,6 +452,9 @@
             .bottom-footer-left {
                 text-align: center;
             }
+        }
+        .direct-item {
+            margin-bottom: 15px;
         }
     }
     
@@ -753,5 +753,10 @@
     }
     .phone {
         display: inline-block;
+    }
+
+    .direct-item:nth-child(3),
+    .direct-item:nth-child(6) {
+        margin-right: 0;
     }
 }
