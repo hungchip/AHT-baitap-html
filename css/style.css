@@ -428,10 +428,11 @@ li {
 .saleup-box .saleup-percent {
   font-size: 100px;
   font-family: 'CormorantGaramond', serif;
-  line-height: 95px;
+  line-height: 93px;
+  font-weight: bold;
 }
 .saleup-box .saleup-content {
-  line-height: 80px;
+  line-height: 81px;
   font-size: 24px;
   font-family: 'CormorantGaramond', serif;
   text-transform: capitalize;
@@ -442,7 +443,7 @@ li {
   text-transform: uppercase;
   font-weight: bold;
   color: #696969;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   line-height: 90px;
 }
 .banner-bottom .banner-left {
