@@ -38,9 +38,7 @@
             }
         }
     }
-    .direct-item:last-child {
-        margin-right: 0;
-    }
+
 }
 .btn-subcribe {
     font-size: 14px;
@@ -81,36 +79,39 @@
 }
 
 .footer {
-    a   {
-        color: @color-text-gray;
+    color: @color-text-gray;
+    transition: all ease-in-out .3s;
+    .social-item {
+        border: 2px solid #4e4e4e;
+        border-radius: 100%;
+        padding: 13px 16px;
+        margin-left: 10px;
         transition: all ease-in-out .3s;
-        .social-item {
-            border: 2px solid #696969;
-            border-radius: 100%;
-            padding: 13px 16px;
-            margin-left: 10px;
-            transition: all ease-in-out .3s;
-            font-size: 16px;
-            &:hover {
-                background: @color-hover;  
-                border-color: @color-hover;  
-                color: @color-text-dark;
-            }
-            &:hover a{
-                color: @color-text-dark;
-            }
-            &.fb {
-                padding: 13px 16px;
-            }
-
-            &.tw, 
-            &.yt {
-                padding: 10px 13px;
-            }
-            &.tw,
-            &.yt {
-                padding-top: 13px;
-            }
+        font-size: 16px;
+        
+        &:hover {
+            background: @color-hover;  
+            border-color: @color-hover;  
+            color: @color-text-dark;
         }
+        &:hover a{
+            color: @color-text-dark;
+        }
+        &.fb {
+            padding: 13px 16px;
+        }
+        &.tw, 
+        &.yt {
+            padding: 10px 13px;
+        }
+        &.tw,
+        &.yt {
+            padding-top: 13px;
+        }
+    }
+    .social-item {
+       a {
+           color: #ababab;
+       }
     }
 }

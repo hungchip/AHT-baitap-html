@@ -162,8 +162,19 @@ li {
   font-size: 25px;
 }
 .menu button {
-  display: flex;
+  display: block;
   align-items: center;
+}
+.ul-menu {
+  display: flex;
+  font-family: 'FiraSans', sans-serif;
+  font-size: 22px;
+}
+.menu-item {
+  padding: 10px 20px;
+}
+.menu-item a {
+  color: #fff;
 }
 .shopping-cart {
   position: relative;
@@ -186,6 +197,18 @@ li {
   color: #fff;
   margin-left: 40px;
   font-size: 25px;
+}
+.ul-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 90px;
+  right: 0;
+  width: 0;
+  height: 500px;
+  transition: all ease-in-out 0.4s;
+}
+@media screen and (max-width: 600px) {
 }
 .banner_top {
   background-image: url('../images/banner_01.jpg');
@@ -754,9 +777,6 @@ li {
 .direct .direct-item a:hover {
   color: #d6ba8d;
 }
-.direct .direct-item:last-child {
-  margin-right: 0;
-}
 .btn-subcribe {
   font-size: 14px;
   font-weight: bold;
@@ -793,36 +813,39 @@ li {
   transform: translate(-5px, 15px);
   font-weight: bold;
 }
-.footer a {
+.footer {
   color: #ababab;
   transition: all ease-in-out 0.3s;
 }
-.footer a .social-item {
-  border: 2px solid #696969;
+.footer .social-item {
+  border: 2px solid #4e4e4e;
   border-radius: 100%;
   padding: 13px 16px;
   margin-left: 10px;
   transition: all ease-in-out 0.3s;
   font-size: 16px;
 }
-.footer a .social-item:hover {
+.footer .social-item:hover {
   background: #d6ba8d;
   border-color: #d6ba8d;
   color: #333;
 }
-.footer a .social-item:hover a {
+.footer .social-item:hover a {
   color: #333;
 }
-.footer a .social-item.fb {
+.footer .social-item.fb {
   padding: 13px 16px;
 }
-.footer a .social-item.tw,
-.footer a .social-item.yt {
+.footer .social-item.tw,
+.footer .social-item.yt {
   padding: 10px 13px;
 }
-.footer a .social-item.tw,
-.footer a .social-item.yt {
+.footer .social-item.tw,
+.footer .social-item.yt {
   padding-top: 13px;
+}
+.footer .social-item a {
+  color: #ababab;
 }
 @media screen and (max-width: 1440px) {
   #header {
@@ -1286,6 +1309,10 @@ li {
   #brand .col-2 {
     width: 50%;
   }
+  .direct-item:nth-child(4),
+  .direct-item:nth-child(6) {
+    margin-right: 0;
+  }
 }
 @media screen and (max-width: 375px) {
   #banner_top .container-wide .title-banner .title-banner-bot {
@@ -1351,6 +1378,9 @@ li {
   .direct-item:nth-child(3),
   .direct-item:nth-child(6) {
     margin-right: 0;
+  }
+  .direct-item:nth-child(4) {
+    margin-right: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */

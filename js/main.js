@@ -10,4 +10,16 @@ $(document).ready(function() {
             $('#header').css('padding', '30px 15px');
         }
     });
+    // $('.menu-icon').click(function() {
+    //     // alert('hẻllo');
+    //     // $('.ul-menu ').css('width', '300px');
+    //     // $('.ul-menu ').toggle(function() {
+    //     //     $('.ul-menu').animate({ width: "300px" })
+    //     // });
+
+    // });
+    $('.menu-icon').click(function() {
+        var toggleWidth = $(".ul-menu").width() == 300 ? "0" : "300px";
+        $('.ul-menu').animate({ width: toggleWidth });
+    });
 });
