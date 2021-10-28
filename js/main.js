@@ -18,7 +18,7 @@ $(document).ready(function() {
     //     // });
 
     // });
-    $('.menu-icon').click(function() {
+    $('.menu-icon1').click(function() {
         var toggleWidth = $(".ul-menu").width() == 300 ? "0" : "300px";
         $('.ul-menu').animate({ width: toggleWidth });
     });
