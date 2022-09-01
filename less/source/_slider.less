@@ -1,19 +1,19 @@
 .banner_top {
-    background-image: url('../images/banner_01.jpg');
+    background-image: url("../images/banner_01.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right 30% top;
-    height: 1000px;
+    height: 100vh;
     overflow: hidden;
     display: flex;
     align-items: center;
-   .container-wide {
+    .container-wide {
         max-width: 1750px;
         width: 100%;
         // background: #ccc;
         margin: 0 auto;
-        position: relative;  
-   }
+        position: relative;
+    }
 }
 
 .title-banner {
@@ -57,7 +57,6 @@
         text-align: right;
         letter-spacing: 2px;
         line-height: 40px;
-        
     }
 }
 
@@ -66,13 +65,13 @@
         position: relative;
         a {
             color: #fff;
-            opacity: .5;
-            transition: all ease-in-out .3s;
-            &:after{
+            opacity: 0.5;
+            transition: all ease-in-out 0.3s;
+            &:after {
                 position: absolute;
-                content: '';
+                content: "";
                 opacity: 0;
-                transition: all ease-in-out .3s;
+                transition: all ease-in-out 0.3s;
                 background: #000;
                 height: 1px;
                 width: 80px;
